@@ -48,7 +48,7 @@ class SimpleTranslator {
         key;
   }
 
-  dynamic? _decodeFromMap(final String key) {
+  dynamic _decodeFromMap(final String key) {
     final dynamic subMap = calculateSubmap(key);
     if (subMap is List) {
       final String lastKeyPart = key.split(this.keySeparator!).last;
